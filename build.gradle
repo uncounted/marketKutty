@@ -33,7 +33,7 @@ dependencies {
     runtimeOnly 'mysql:mysql-connector-java'
 
     //security
-    implementation 'org.springframework.boot:spring-boot-starter-security'
+    //implementation 'org.springframework.boot:spring-boot-starter-security'
 
     //jwt
     implementation group: 'io.jsonwebtoken', name: 'jjwt', version: '0.9.1'

@@ -1,10 +1,13 @@
-package com.marketkutty.marketkutty.Entity.CategoryCode;
+package com.marketkutty.marketkutty.entity.categoryCode;
 
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
+@Entity
 @Getter
+@NoArgsConstructor
 public class CategoryCode {
 //대신 비즈니스 엔티티가 코드 값 자체를 가지고 있는게 더 좋습니다.
 // 공통 코드의 값을 조회할 때는, 공통 코드 자체를 캐시에 올려두고
@@ -15,6 +18,10 @@ public class CategoryCode {
 // 그게 아니라면 가급적 ENUM을 사용하는 것을 권장드립니다.- by. 갓영한 선생님
 // enum을 쓰라고도 했으나, 001001과 같이 이루어진 코드인데 붙일 네이밍도 없고..양도 많고..어떻게 해야할지 모르겠다
 // 하여 캐시 방법으로 하고, 연관관계를 맺지 않는다.
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
 
     private int code; //001001
     private int depth1; //001

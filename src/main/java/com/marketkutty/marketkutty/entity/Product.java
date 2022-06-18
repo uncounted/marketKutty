@@ -1,13 +1,11 @@
-package com.marketkutty.marketkutty.Entity;
+package com.marketkutty.marketkutty.entity;
 
-import com.fasterxml.jackson.annotation.JsonManagedReference;
-import com.marketkutty.marketkutty.Entity.BaseEntity.BaseEntity;
+import com.marketkutty.marketkutty.entity.baseEntity.BaseEntity;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
-import java.util.List;
 
 @Entity
 @Getter

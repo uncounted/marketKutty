@@ -1,6 +1,7 @@
-package com.marketkutty.marketkutty.Entity;
+package com.marketkutty.marketkutty.entity;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -28,16 +29,18 @@ public class Address {
     private String addressDetail;
 
     @NotNull
-    private String zoneNo;
+    private String zonecode;
 
     @NotNull
     private Boolean defaultAddress;
 
-    public Address(Long id, String address, String addressDetail, String zoneNo, Boolean defaultAddress) {
+    @Builder
+    public Address(Long id, String address, String addressDetail, String zonecode, Boolean defaultAddress, User user) {
         this.id = id;
         this.address = address;
         this.addressDetail = addressDetail;
-        this.zoneNo = zoneNo;
+        this.zonecode = zonecode;
         this.defaultAddress = defaultAddress;
+        this.user = user;
     }
 }

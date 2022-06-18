@@ -1,6 +1,5 @@
-package com.marketkutty.marketkutty.Entity;
+package com.marketkutty.marketkutty.entity;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
