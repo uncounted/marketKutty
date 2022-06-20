@@ -1,7 +1,7 @@
 package com.marketkutty.marketkutty.service;
 
-import com.marketkutty.marketkutty.dto.AddressDto;
-import com.marketkutty.marketkutty.entity.User;
+import com.marketkutty.marketkutty.model.dto.AddressDto;
+import com.marketkutty.marketkutty.model.entity.User;
 import com.marketkutty.marketkutty.repository.AddressRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -26,8 +26,8 @@ public class AddressService {
 
     public AddressDto createAddress(HttpServletRequest httpRequest, AddressDto requestDto) {
         //TokenDecode decode = (TokenDecode) httpRequest.getAttribute("decode");
-
         User user = new User(); // UserRepository로 수정 필요
+
         if(user != null){
 
             if(requestDto.getAddress() == null) throw new IllegalArgumentException("주소를 입력해주세요.");

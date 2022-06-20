@@ -1,4 +1,4 @@
-package com.marketkutty.marketkutty.entity.categoryCode;
+package com.marketkutty.marketkutty.model.entity.categoryCode;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

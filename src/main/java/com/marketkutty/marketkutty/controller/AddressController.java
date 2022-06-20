@@ -1,6 +1,7 @@
 package com.marketkutty.marketkutty.controller;
 
-import com.marketkutty.marketkutty.dto.AddressDto;
+import com.marketkutty.marketkutty.model.TokenDecode;
+import com.marketkutty.marketkutty.model.dto.AddressDto;
 import com.marketkutty.marketkutty.service.AddressService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -17,14 +18,16 @@ public class AddressController {
 
     @GetMapping("/api/address")
     public ResponseEntity<List<AddressDto>> getAddressList(HttpServletRequest httpRequest){
-        List<AddressDto> responseDto = addressService.getAddressList(httpRequest);
+        TokenDecode decode = (TokenDecode) httpRequest.getAttribute("decode");
+        List<AddressDto> responseDto = addressService.getAddressList(decode);
         return ResponseEntity.ok()
                 .body(responseDto);
     }
 
     @PostMapping("/api/address/create")
     public ResponseEntity<AddressDto> createAddress(HttpServletRequest httpRequest, @RequestBody AddressDto requestDto){
-        AddressDto responseDto =  addressService.createAddress(httpRequest, requestDto);
+        TokenDecode decode = (TokenDecode) httpRequest.getAttribute("decode");
+        AddressDto responseDto =  addressService.createAddress(decode, requestDto);
         return ResponseEntity.ok()
                 .body(responseDto);
     }

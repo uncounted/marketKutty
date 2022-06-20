@@ -1,6 +1,6 @@
-package com.marketkutty.marketkutty.entity;
+package com.marketkutty.marketkutty.model.entity;
 
-import com.marketkutty.marketkutty.entity.baseEntity.BaseEntity;
+import com.marketkutty.marketkutty.model.entity.baseEntity.BaseEntity;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 

@@ -1,4 +1,4 @@
-package com.marketkutty.marketkutty.entity;
+package com.marketkutty.marketkutty.model.entity;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.Builder;

@@ -1,4 +1,4 @@
-package com.marketkutty.marketkutty.entity.baseEntity;
+package com.marketkutty.marketkutty.model.entity.baseEntity;
 
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;

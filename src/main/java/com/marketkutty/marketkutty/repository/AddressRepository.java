@@ -1,8 +1,8 @@
 package com.marketkutty.marketkutty.repository;
 
-import com.marketkutty.marketkutty.dto.AddressDto;
-import com.marketkutty.marketkutty.entity.Address;
-import com.marketkutty.marketkutty.entity.User;
+import com.marketkutty.marketkutty.model.dto.AddressDto;
+import com.marketkutty.marketkutty.model.entity.Address;
+import com.marketkutty.marketkutty.model.entity.User;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
