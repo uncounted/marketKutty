@@ -7,7 +7,7 @@ import com.auth0.jwt.interfaces.DecodedJWT;
 import com.auth0.jwt.interfaces.JWTVerifier;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.marketkutty.marketkutty.model.TokenDecode;
-import com.marketkutty.marketkutty.model.dto.UserTokenRespDto;
+import com.marketkutty.marketkutty.model.dto.responseDto.UserTokenRespDto;
 import org.springframework.stereotype.Component;
 
 import javax.servlet.*;

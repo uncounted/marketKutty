@@ -8,7 +8,11 @@ import com.auth0.jwt.interfaces.DecodedJWT;
 import com.auth0.jwt.interfaces.JWTVerifier;
 
 import com.marketkutty.marketkutty.model.dto.*;
-import com.marketkutty.marketkutty.model.entity.Address;
+import com.marketkutty.marketkutty.model.dto.requestDto.SignInDto;
+import com.marketkutty.marketkutty.model.dto.requestDto.SignupDto;
+import com.marketkutty.marketkutty.model.dto.responseDto.UserLoginRespDto;
+import com.marketkutty.marketkutty.model.dto.responseDto.UserRegisterRespDto;
+import com.marketkutty.marketkutty.model.dto.responseDto.UserTokenRespDto;
 import com.marketkutty.marketkutty.model.entity.RefreshToken;
 import com.marketkutty.marketkutty.model.entity.User;
 import com.marketkutty.marketkutty.repository.AddressRepository;

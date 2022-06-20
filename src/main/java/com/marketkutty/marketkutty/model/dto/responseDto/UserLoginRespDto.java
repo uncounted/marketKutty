@@ -1,4 +1,4 @@
-package com.marketkutty.marketkutty.model.dto;
+package com.marketkutty.marketkutty.model.dto.responseDto;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

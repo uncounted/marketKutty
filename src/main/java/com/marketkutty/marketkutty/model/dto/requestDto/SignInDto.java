@@ -1,4 +1,4 @@
-package com.marketkutty.marketkutty.model.dto;
+package com.marketkutty.marketkutty.model.dto.requestDto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,7 +9,8 @@ import lombok.Setter;
 @AllArgsConstructor
 @Setter
 @Getter
-public class RefreshTokenDto {
-    private String refreshToken;
-    private String accessToken;
+public class SignInDto {
+    private String username;
+    private String password;
 }
+

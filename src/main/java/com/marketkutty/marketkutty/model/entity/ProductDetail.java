@@ -13,7 +13,7 @@ import javax.validation.constraints.NotNull;
 public class ProductDetail {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name="ADDRESS_ID")
+    @Column(name="PRODUCT_ID")
     private Long id;
 
     @OneToOne //단방향. product 리스트에서는 디테일을 볼 필요가 없게 구성함

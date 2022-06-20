@@ -16,8 +16,7 @@ public class Product extends BaseEntity {
     @Column(name="PRODUCT_ID")
     private Long id;
 
-    @NotNull
-    private int categoryCode; //001001
+    private int code;
 
     @NotNull
     private String name;
@@ -30,4 +29,5 @@ public class Product extends BaseEntity {
 
     @NotNull
     private String thumb;
+
 }
