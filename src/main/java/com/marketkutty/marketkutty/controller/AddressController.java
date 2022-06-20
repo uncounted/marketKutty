@@ -16,18 +16,17 @@ public class AddressController {
 
     private final AddressService addressService;
 
-    @GetMapping("/api/address")
-    public ResponseEntity<List<AddressDto>> getAddressList(HttpServletRequest httpRequest){
-        TokenDecode decode = (TokenDecode) httpRequest.getAttribute("decode");
-        List<AddressDto> responseDto = addressService.getAddressList(decode);
-        return ResponseEntity.ok()
-                .body(responseDto);
-    }
+//    @GetMapping("/api/address")
+//    public ResponseEntity<List<AddressDto>> getAddressList(HttpServletRequest httpRequest){
+//        TokenDecode decode = (TokenDecode) httpRequest.getAttribute("decode");
+//        List<AddressDto> responseDto = addressService.getAddressList(httpRequest);
+//        return ResponseEntity.ok()
+//                .body(responseDto);
+//    }
 
     @PostMapping("/api/address/create")
     public ResponseEntity<AddressDto> createAddress(HttpServletRequest httpRequest, @RequestBody AddressDto requestDto){
-        TokenDecode decode = (TokenDecode) httpRequest.getAttribute("decode");
-        AddressDto responseDto =  addressService.createAddress(decode, requestDto);
+        AddressDto responseDto =  addressService.createAddress(httpRequest, requestDto);
         return ResponseEntity.ok()
                 .body(responseDto);
     }
